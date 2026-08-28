@@ -1,0 +1,715 @@
+{
+  "department": {
+    "department_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 11,
+      "date_range": null
+    },
+    "department_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 11,
+      "date_range": null
+    },
+    "department_type": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 3,
+      "date_range": null
+    },
+    "floor_number": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 5,
+      "date_range": null
+    },
+    "status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 1,
+      "date_range": null
+    }
+  },
+  "admission": {
+    "admission_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 45000,
+      "date_range": null
+    },
+    "admission_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2192,
+      "date_range": [
+        "2020-01-01 00:00:00",
+        "2025-12-31 00:00:00"
+      ]
+    },
+    "discharge_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2203,
+      "date_range": [
+        "2020-01-02 00:00:00",
+        "2026-01-12 00:00:00"
+      ]
+    },
+    "admission_type": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "admission_status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 1,
+      "date_range": null
+    },
+    "patient_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 23275,
+      "date_range": null
+    },
+    "department_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 6,
+      "date_range": null
+    },
+    "ward_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 27,
+      "date_range": null
+    },
+    "bed_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 145,
+      "date_range": null
+    },
+    "disease_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 20,
+      "date_range": null
+    }
+  },
+  "billing_detail": {
+    "billing_detail_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 112402,
+      "date_range": null
+    },
+    "charge_type": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 4,
+      "date_range": null
+    },
+    "reference_id": {
+      "dtype": "float64",
+      "null_pct": 59.96512517570862,
+      "cardinality": 145,
+      "date_range": null
+    },
+    "amount": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 31815,
+      "date_range": null
+    },
+    "bill_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 45000,
+      "date_range": null
+    }
+  },
+  "patient_insurance": {
+    "patient_insurance_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 21617,
+      "date_range": null
+    },
+    "policy_number": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 21613,
+      "date_range": null
+    },
+    "coverage_percentage": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 5,
+      "date_range": null
+    },
+    "policy_start_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 4,
+      "date_range": [
+        "2020-01-01 00:00:00",
+        "2022-12-31 00:00:00"
+      ]
+    },
+    "policy_end_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 6,
+      "date_range": [
+        "2020-12-31 00:00:00",
+        "2025-12-30 00:00:00"
+      ]
+    },
+    "patient_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 18000,
+      "date_range": null
+    },
+    "insurance_provider_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 50,
+      "date_range": null
+    }
+  },
+  "bed": {
+    "bed_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 415,
+      "date_range": null
+    },
+    "bed_number": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 415,
+      "date_range": null
+    },
+    "bed_status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "ward_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 27,
+      "date_range": null
+    }
+  },
+  "disease": {
+    "disease_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 20,
+      "date_range": null
+    },
+    "disease_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 20,
+      "date_range": null
+    },
+    "disease_category": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 11,
+      "date_range": null
+    }
+  },
+  "billing": {
+    "bill_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 45000,
+      "date_range": null
+    },
+    "bill_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2203,
+      "date_range": [
+        "2020-01-02 00:00:00",
+        "2026-01-12 00:00:00"
+      ]
+    },
+    "total_amount": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 32874,
+      "date_range": null
+    },
+    "insurance_covered_amount": {
+      "dtype": "float64",
+      "null_pct": 0.0,
+      "cardinality": 32763,
+      "date_range": null
+    },
+    "patient_payable_amount": {
+      "dtype": "float64",
+      "null_pct": 0.0,
+      "cardinality": 39533,
+      "date_range": null
+    },
+    "payment_status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "payment_mode": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 4,
+      "date_range": null
+    },
+    "admission_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 45000,
+      "date_range": null
+    }
+  },
+  "staff_assignment": {
+    "assignment_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 207,
+      "date_range": null
+    },
+    "employee_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 207,
+      "date_range": null
+    },
+    "ward_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 27,
+      "date_range": null
+    },
+    "shift": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 3,
+      "date_range": null
+    }
+  },
+  "drug": {
+    "drug_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 250,
+      "date_range": null
+    },
+    "drug_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 142,
+      "date_range": null
+    },
+    "brand_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 250,
+      "date_range": null
+    },
+    "drug_category": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 8,
+      "date_range": null
+    },
+    "unit_cost": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 192,
+      "date_range": null
+    },
+    "manufacturer_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 172,
+      "date_range": null
+    }
+  },
+  "patient": {
+    "patient_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 30000,
+      "date_range": null
+    },
+    "gender": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 3,
+      "date_range": null
+    },
+    "date_of_birth": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 19760,
+      "date_range": [
+        "1935-02-09 00:00:00",
+        "2026-02-04 00:00:00"
+      ]
+    },
+    "blood_group": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 8,
+      "date_range": null
+    },
+    "city": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 17836,
+      "date_range": null
+    },
+    "contact_number": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 30000,
+      "date_range": null
+    }
+  },
+  "doctor": {
+    "doctor_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 98,
+      "date_range": null
+    },
+    "employee_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 98,
+      "date_range": null
+    },
+    "specialization": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 9,
+      "date_range": null
+    },
+    "qualification": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 4,
+      "date_range": null
+    },
+    "experience_years": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 34,
+      "date_range": null
+    }
+  },
+  "employee": {
+    "employee_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 500,
+      "date_range": null
+    },
+    "employee_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 499,
+      "date_range": null
+    },
+    "gender": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "role": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 5,
+      "date_range": null
+    },
+    "employment_type": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "date_of_joining": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 477,
+      "date_range": [
+        "2011-02-23 00:00:00",
+        "2026-01-22 00:00:00"
+      ]
+    },
+    "department_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 11,
+      "date_range": null
+    }
+  },
+  "diagnostic_test": {
+    "test_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 9,
+      "date_range": null
+    },
+    "test_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 9,
+      "date_range": null
+    },
+    "test_category": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "standard_cost": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 9,
+      "date_range": null
+    },
+    "department_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    }
+  },
+  "ward": {
+    "ward_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 27,
+      "date_range": null
+    },
+    "ward_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 27,
+      "date_range": null
+    },
+    "ward_type": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 4,
+      "date_range": null
+    },
+    "total_beds": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 3,
+      "date_range": null
+    },
+    "department_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 6,
+      "date_range": null
+    }
+  },
+  "patient_diagnostic": {
+    "patient_diagnostic_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 63269,
+      "date_range": null
+    },
+    "test_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2202,
+      "date_range": [
+        "2020-01-01 00:00:00",
+        "2026-01-10 00:00:00"
+      ]
+    },
+    "result_status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "admission_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 31512,
+      "date_range": null
+    },
+    "test_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 9,
+      "date_range": null
+    },
+    "doctor_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 50,
+      "date_range": null
+    }
+  },
+  "drug_inventory": {
+    "inventory_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 250,
+      "date_range": null
+    },
+    "current_stock": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 218,
+      "date_range": null
+    },
+    "reorder_level": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 151,
+      "date_range": null
+    },
+    "inventory_status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "last_restock_date": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 234,
+      "date_range": [
+        "2020-01-11 00:00:00",
+        "2025-12-25 00:00:00"
+      ]
+    },
+    "drug_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 250,
+      "date_range": null
+    }
+  },
+  "drug_manufacturer": {
+    "manufacturer_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 300,
+      "date_range": null
+    },
+    "manufacturer_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 295,
+      "date_range": null
+    },
+    "country": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 5,
+      "date_range": null
+    },
+    "reliability_rating": {
+      "dtype": "float64",
+      "null_pct": 0.0,
+      "cardinality": 15,
+      "date_range": null
+    },
+    "contract_status": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    }
+  },
+  "insurance_provider": {
+    "insurance_provider_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 50,
+      "date_range": null
+    },
+    "provider_name": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 50,
+      "date_range": null
+    },
+    "provider_type": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "contact_details": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 50,
+      "date_range": null
+    },
+    "coverage_limit": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 7,
+      "date_range": null
+    }
+  },
+  "prescription": {
+    "prescription_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 73109,
+      "date_range": null
+    },
+    "dosage": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 2,
+      "date_range": null
+    },
+    "frequency": {
+      "dtype": "object",
+      "null_pct": 0.0,
+      "cardinality": 3,
+      "date_range": null
+    },
+    "duration_days": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 12,
+      "date_range": null
+    },
+    "admission_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 29287,
+      "date_range": null
+    },
+    "drug_id": {
+      "dtype": "int64",
+      "null_pct": 0.0,
+      "cardinality": 250,
+      "date_range": null
+    }
+  }
+}
